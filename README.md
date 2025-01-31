@@ -1,5 +1,86 @@
 # jarvis README
 
+# Jarvis VS Code Extension
+
+A VS Code extension that integrates with Ollama to provide AI chat capabilities.
+
+## Prerequisites
+
+- Node.js and npm
+- Visual Studio Code
+- Ollama installed locally
+- Yo and VS Code Extension Generator
+
+## Setup Development Environment
+
+1. Install Yeoman and VS Code Extension Generator:
+```bash
+npm install -g yo generator-code
+```
+
+2. Create extension scaffold:
+```bash
+yo code
+```
+Select these options:
+- Extension type: `New Extension (TypeScript)`
+- Extension name: `jarvis`
+
+3. Install Ollama:
+```bash
+curl https://ollama.ai/install.sh | sh
+```
+
+4. Add Ollama dependency:
+```bash
+npm install ollama
+```
+
+## Development
+
+1. Update `package.json`:
+```json
+{
+  "activationEvents": [
+    "onCommand:jarvis.start"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "jarvis.start",
+        "title": "Chat with Jarvis"
+      }
+    ]
+  }
+}
+```
+
+2. Pull required model:
+```bash
+ollama pull deepseek-r1:latest
+```
+
+3. Build and run:
+- Press F5 to open debugger
+- Open Command Palette (Ctrl+Shift+P)
+- Type "Chat with Jarvis"
+- Extension window will open
+
+## Features
+
+- AI chat interface using Ollama
+- Streaming responses
+- Error handling for model availability
+- Developer console logging
+- Simple chat UI with input/output
+
+## Troubleshooting
+
+- Check Output panel for extension logs
+- Ensure Ollama is running locally
+- Verify model is pulled
+- Check Developer Tools console (Help > Toggle Developer Tools)
+
 This is the README for your extension "jarvis". After writing up a brief description, we recommend including the following sections.
 
 ## Features
