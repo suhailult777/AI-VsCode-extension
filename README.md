@@ -1,8 +1,11 @@
-# jarvis README
+# Jarvis — VS Code AI Chat Extension ⚡
 
-# Jarvis VS Code Extension
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![VS Code](https://img.shields.io/badge/VS_Code-007ACC?logo=visualstudiocode&logoColor=white)](https://code.visualstudio.com/)
+[![Ollama](https://img.shields.io/badge/Ollama-000000?logo=ollama&logoColor=white)](https://ollama.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A VS Code extension that integrates with Ollama to provide AI chat capabilities.
+> Brings Ollama's AI chat into Visual Studio Code — in-editor help with streaming responses, without leaving the editor.
 
 ## Prerequisites
 
